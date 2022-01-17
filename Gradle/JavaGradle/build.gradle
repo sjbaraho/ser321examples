@@ -38,7 +38,9 @@ task runAppAgain(type: JavaExec) {
     args(project.getProperty('num1'), project.getProperty('num2'));
   } else if (project.hasProperty("num1")){
     args(project.getProperty('num1'), 1);
-  }
+  } else{
+  args '1'
+  args '2'
 }
 
 // task that runs the Fraction Main which does not use arguments: gradle runFraction
