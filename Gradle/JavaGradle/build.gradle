@@ -41,6 +41,7 @@ task runAppAgain(type: JavaExec) {
   } else{
   args '1'
   args '2'
+  }
 }
 
 // task that runs the Fraction Main which does not use arguments: gradle runFraction
